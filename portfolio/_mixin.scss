@@ -1,0 +1,6 @@
+@mixin tit ($size,$col){
+    font-size:$size;
+    font-weight: bold;
+    color:$col;
+    font-family: "Roboto", sans-serif;
+}
