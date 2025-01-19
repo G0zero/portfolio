@@ -1,0 +1,77 @@
+@import "./mixin","./common";
+
+
+.nav{
+    font-family: 'Noto Serif', serif;
+    position: fixed;
+    top:0;
+    right:0;
+    z-index:999999;
+    padding:30px 70px 0 0;
+    ul {
+        display: flex;
+        li {
+            & ~ li {
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+.pos{
+    .con_wrap {
+        padding: 60px;
+        .main_tit {
+                font-size: 150px; 
+                font-family: 'Noto Serif', serif;
+                font-optical-sizing: auto;
+                font-weight: 300;
+                font-style: normal;
+        }
+        .txt_wrap{
+            padding-right: 30px;
+            margin-left: auto;
+            margin-top: auto;
+            .sub{
+                font-size: 16px;
+                color:#333;
+                opacity: 0.8;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+
+.img_box {
+    width:250px;
+    padding:60px 60px 20px 0;
+    img{
+        width:100%;
+    }
+}
+
+.item_wrap{
+    width: 450px;
+    h4{
+        float:left;
+        
+
+    }
+    .item_con{
+        float: left;
+        padding: 0 30px 20px 30px;
+        ul {
+            li {
+                font-size: 15px;
+                font-weight: 700;
+                padding: 5px 0 15px 0;
+                p {
+                    margin: 5px 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+

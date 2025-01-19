@@ -1,0 +1,96 @@
+@import "./reset","./font";
+
+html,body {width:100%;height:100%;margin:0px;padding:0px;overflow:hidden;}
+#fullpage {position:relative;top:0px;z-index:9;width:100%;height:100%;}
+.fullsection{width:100%;height:100%;}
+
+// 공통
+a {
+    color:#333;
+    text-decoration: none;
+}
+.inner{
+    padding: 0 60px 60px;
+} 
+//postion
+.pos {
+    position: relative;
+    width: 100%;
+    .bot{
+        position:absolute;
+        bottom: 0;
+    }
+}
+
+//float 
+.clearfix::after{
+	content: "";
+	display: block;
+	clear:both;
+}
+.fl_le{
+    float: left;
+}
+.fl_ri{
+    float: right;
+}
+
+.flex{
+    display: flex;
+    width:100%;
+    box-sizing: border-box;
+    &_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-grow: 1;
+    }
+    li {
+        
+       &~li{
+        margin-left: 10px;
+       }
+    }
+}
+//margin
+@for $i from 1 through 60 {
+    .mart#{$i}{
+       margin-top: #{$i}+'px'; 
+    }
+    .marl#{$i}{
+        margin-left: #{$i}+'px';
+    }
+}
+.mar0{
+    margin: 0 !important;
+}
+
+//tit
+.tit{
+    font-family: 'Noto Serif', serif;
+    font-size: 80px;
+    font-weight: 300;
+    padding: 60px 0 10px 0;
+    &01{
+        font-family: "Roboto";
+        font-size: 22px;
+        font-weight: bold;
+        margin: 20px 10px;
+        letter-spacing: 2px;
+        color:#333
+    }
+    &02 {
+        font-family: 'Noto Serif', serif;
+        font-size: 20px;
+    }
+}
+.txt{
+    &01{
+        font-family: "Roboto";
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0 10px;
+        color:#444;
+    }
+}
