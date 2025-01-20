@@ -74,4 +74,19 @@
     }
 }
 
+.full3 {
+    .con_wrap{
+        .inner {   
+            .swiper_box {
+                width: 100%;
+                position: relative;
+                .swiper{
+                    width: 100%;
+                    position: absolute;
+                    top:150px;
+                }
+             } 
+        }
+    }
+}
 

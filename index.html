@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웹 퍼블리셔 이가영 - portfolio</title>
 	<link rel="stylesheet" href="css/index.css">
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	
     <style>
 	html,body {width:100%;height:100%;margin:0px;padding:0px;overflow:hidden;}
 	#fullpage {position:relative;top:0px;z-index:9;width:100%;height:100%;}
@@ -14,8 +19,8 @@
 	.full1{background:#aac8ee;}
 	.full2{background: #c6dbf5;}
 	.full3{background: #c6dbf5;}
-	.full4{background:blue;}
-	.full5{background:purple;}
+	.full4{background: #c6dbf5;}
+	.full5{background: #c6dbf5;}
 	/* #fullpage span{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;font-size:4em;font-weight:bold;} */
 	.full2 span{color:#000;}
 
@@ -45,8 +50,9 @@
         <div class="nav">
             <ul>
                 <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT ME</a></li>
                 <li><a href="#">CONTENTS</a></li>
-                <li><a href="#">STUDY</a></li>
+				<li><a href="#">CARRER</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </div>
@@ -123,13 +129,13 @@
 									<h4 class="tit02 fl_le">Tool</h4>
 									<div class="item_con">
 										<ul class="flex mart20">
-											<li>HTML</li>
-											<li>CSS</li>
-											<li>SCSS</li>
-											<li>JQUERY</li>
-											<li>JAVASCRIPT</li>
-											<li>GIT</li>
-											<li>SVN</li>
+											<li><span>html</span></li>
+											<li><span>CSS</span></li>
+											<li><span>SCSS</span></li>
+											<li><span>JQUERY</span></li>
+											<li><span>JAVASCRIPT</span></li>
+											<li><span>GIT</span></li>
+											<li><span>SVN</span></li>
 										</ul>
 									</div>
 								</li>
@@ -167,15 +173,84 @@
 			<div class="con_wrap">
 				<div class="inner">
 					<h3 class="tit">CONTENTS.</h3>
-					<span>슬라이드</span>
+					<div class="swiper_box">
+						<div #swiperRef="" class="swiper mySwiper">
+							<div class="swiper-wrapper">
+							  <div class="swiper-slide">
+								<div style="width: 100%;">
+									<a href="#" style="width: 100%;">
+										<img src="css/images/img_corelle.png" style="width: 100%;" alt="">
+										<div>
+											<p>corelle</p>
+											<p>기여도 : 100%</p>
+											<p>작업소요시간 : 하루</p>
+											<p>사용툴 : html/scss</p>
+										</div>
+									</a>
+								</div>
+							  </div>
+							  <div class="swiper-slide">Slide 2</div>
+							  <div class="swiper-slide">Slide 3</div>
+							  <div class="swiper-slide">Slide 4</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+						  </div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="fullsection full4" pageNum="4"><span>4 PAGE</span></div>
+		<div class="fullsection full4" pageNum="4">
+			<div class="con_wrap">
+				<div class="inner">
+					<h3 class="tit">CARRER.</h3>
+					<div class="swiper_box">
+						<div #swiperRef="" class="swiper mySwiper">
+							<div class="swiper-wrapper">
+							  <div class="swiper-slide">
+								<div style="width: 100%;">
+									<a href="https://tour.ticketlink.co.kr/" style="width: 100%;">
+										<img src="css/images/img_nhn_trip.png" style="width: 100%;" alt="">
+										<div>
+											<p>여행박사 리뉴얼 (PC/MO)</p>
+											<p>기여도 : 70%</p>
+											<p>작업소요시간 : 한달</p>
+											<p>사용툴 : html/scss/jquery/git</p>
+										</div>
+									</a>
+								</div>
+							  </div>
+							  <div class="swiper-slide">
+								<div style="width: 100%;">
+									<a href="https://www.ticketlink.co.kr/home" style="width: 100%;">
+										<img src="css/images/img_nhn_trip.png" style="width: 100%;" alt="">
+										<div>
+											<p>티켓링크 운영 (PC/MO)</p>
+											<p>기여도 : 100%</p>
+											<p>운영기간 : 23.02 - 23.10</p>
+											<p>사용툴 : html/scss/css/jquery/git/svn/cdn/gulp/bulid</p>
+										</div>
+									</a>
+								</div>
+							  </div>
+							  <div class="swiper-slide">Slide 3</div>
+							  <div class="swiper-slide">Slide 4</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+						  </div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="fullsection full5" pageNum="5"><span>5 PAGE</span></div>
 	</div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     $(document).ready(function(){
 	fullset();
@@ -262,5 +337,21 @@ function quickClick(){
 	});
 }
 </script>
+ <!-- Initialize Swiper -->
+ <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>

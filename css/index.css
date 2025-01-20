@@ -725,3 +725,13 @@ a {
 .item_wrap .item_con ul li p {
   margin: 5px 0 0 0;
 }
+
+.full3 .con_wrap .inner .swiper_box {
+  width: 100%;
+  position: relative;
+}
+.full3 .con_wrap .inner .swiper_box .swiper {
+  width: 100%;
+  position: absolute;
+  top: 150px;
+}
