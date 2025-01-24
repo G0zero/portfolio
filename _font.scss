@@ -1,11 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nanum+Gothic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-.lora{
-	font-family: 'Lora', serif;
-	font-optical-sizing: auto;
-	font-weight: 300;
-	font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
@@ -29,3 +24,31 @@
 	font-weight: 300;
 	font-style: normal;
   }
+
+
+  @font-face {
+    font-family: 'GmarketSans';
+    src: url('/fonts/GmarketSansBold.ttf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('/fonts/GmarketSansLight.ttf') format('opentype');
+    font-weight: 300; /* light는 일반적으로 300의 폰트 가중치에 해당합니다. */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('/fonts/GmarketSansMedium.ttf') format('opentype');
+    font-weight: 500; /* medium은 일반적으로 500의 폰트 가중치에 해당합니다. */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'mapo';
+    src: url('/font/MapoBackpacking.ttf') format('opentype');
+    font-weight: 500; /* medium은 일반적으로 500의 폰트 가중치에 해당합니다. */
+    font-style: normal;
+}
