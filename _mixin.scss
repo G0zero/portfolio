@@ -4,3 +4,11 @@
     color:$col;
     font-family: "Roboto", sans-serif;
 }
+
+@mixin ico01 ($x,$y){
+    width: 30px;
+    height: 30px;
+    background-image: url('css/images/icon.png');
+    background-position: $x,$y;
+    background-repeat: no-repeat;
+}

@@ -17,6 +17,12 @@
         }
     }
 }
+//아이콘 
+.ico{
+    &01{
+        @include ico01(0, 0);
+    }
+}
 
 .full1{
     .con_wrap {
@@ -74,14 +80,6 @@
     }
 }
 
-// .full1{
-//     .con_wrap{
-//         background-image: url(/css/images/main_img.png);
-//         background-repeat: no-repeat;
-//         background-position: center ;
-//         background-size: 100%;
-//     }
-// }
 .full3 {
     .con_wrap{
         .inner {   
