@@ -1,0 +1,444 @@
+@charset "utf-8";
+
+/*****RESET**********************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*float을 해제하는 가상 선택자*/
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*영문폰트*/
+
+.eng {
+    font-family: 'PT Serif', serif;
+}
+
+.inner {
+    width: 90%;
+    max-width: 1280px;
+    /*반응형 웹을 만들때 모두에게 값을 주지않아도 max-width를 통해 정해줄수 있음*/
+    margin: 0 auto;
+}
+
+/*inner는 보통 안쪽의 너비를 잡아주는 용도로 사용하는 것*/
+
+.sec-tit {
+    font-size: 32px;
+    font-size: 2rem;
+    font-family: 'PT Serif', serif;
+    margin-bottom: 20px;
+}
+
+/*******header**************************************************/
+
+header {
+    width: 100%;
+    height: 100px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    position:fixed;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+header .logo {
+    width: 20%;
+    float: left;
+
+    /*    outline: 2px solid red;*/
+}
+
+header .logo a {
+    display: block;
+
+}
+
+header .logo a img {
+    /*    outline: 2px solid blue;*/
+    height: 50px;
+    display: block;
+    margin-top: 6px;
+}
+
+header .m-menu {
+    display: none;
+}
+
+header nav {
+    width: 60%;
+    float: left;
+    margin-left: 2%;
+    /* outline: 2px solid red;*/
+}
+
+header nav ul {}
+
+header nav ul li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    /*outline: 2px solid blue;*/
+}
+
+/*너비를 고려할떄 반응형으로 구현할떄 중요한 사실은 줄였다 커졌다 할때 계속값을 주어줄수없기떄문에 %로 줘야함 */
+header nav ul li a {
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-family: 'PT Serif', serif;
+    color: #333;
+    padding-bottom: 5px;
+    transition: all 0.5s;
+}
+header nav ul li a:hover {
+/*    text-decoration: underline;*/
+    border-bottom: 3px solid #00c5b4;
+    color: #00c5b4;
+}
+
+header .sns {
+    /* width: 20%;*/
+    float: right;
+    text-align: right;
+    /*text-align으로 인라인요소를 배치할떄, 부모요소에서 text-align설정!*/
+    /*  outline: 2px solid red;*/
+}
+
+header .sns a {
+    /*width: 60px;*/
+    height: 60px;
+    display: inline-block;
+    /*outline: 2px solid blue;*/
+}
+
+/*header .sns a:first-child {
+    margin-right: 10px;
+}*/
+
+header .sns a img {
+    /*width: 100%;*/
+    height: 50px;
+    margin-top: 5px;
+    display: block;
+}
+
+/*밑에 여백은 이미지태그에서 나오는거 아니고  a태그가 인라인 요소여서 생기는 여백일것임 */
+
+/***section*****************************/
+section {
+    margin-top: 130px;
+    /*header높잇값 100px + intro 영역과의 여백 30px*/
+}
+
+section > article {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/****intro********************************/
+article.intro {
+   /* width: 100%;*/
+    height: 550px;
+    background: url(images/rb_logo.png) no-repeat right;
+    background-size: auto 550px;
+    /*높이를 기준으로 사이즈를 정할때 너비자리에 auto를 넣어 사이즈를 정해주면 됨*/
+    
+    position: relative;/*txt-box, .btn의 기준!*/
+  /*  outline: 2px solid red;*/
+    
+}
+
+.intro .txt-box {
+    width: 40%;
+    /*position 안쓰고 자리잡기*/
+    /*padding-top: 60px;
+    margin-bottom: 100px;*/
+    
+    /*포지션 쓰고 자리잡기*/
+    position: absolute;
+    top: 80px;
+  /*  outline: 2px solid blue;*/
+} 
+.intro .txt-box .des-en {
+    font-size: 22.4px;
+    font-size: 1.4rem;
+    color: darkgray;
+    line-height: 1.4;
+    margin-bottom: 30px;
+} 
+.intro .txt-box .des-ko{
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    word-break: keep-all;
+} 
+
+.intro .btn {
+    font-size: 18px;
+    font-size: 1.125rem;
+    border: 2px solid #e64461;
+    
+    /*1)블럭으로 버튼을 만들때 !
+    display: block;
+    width: 150px;
+    text-align: center;
+    padding: 16px 0;
+    */
+    /*2) 인라인블럭으로 버튼을 만들때!*/
+    display: inline-block;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #e64461;
+    
+    position: absolute;
+    bottom: 20%;
+} 
+.intro .btn:hover {
+    background-color: #e64461;
+    color: #fff;
+} 
+
+
+/****works****************************/
+
+article.works {
+    margin-top: 80px;
+}
+.works .img-wrap {}
+.works .img-wrap .img-box{
+    width: 23.5%;
+    margin-bottom: 2%;
+    float: left;
+    overflow: hidden;
+    
+ /*   outline: 2px solid red;*/
+}
+
+.works .img-wrap .img-box~.img-box {
+    margin-left: 2%;
+}
+.works .img-wrap .img-box:nth-child(4n+1) {
+    margin-left: 0;
+}
+.works .img-wrap .img-box a {
+    display: block;
+}
+.works .img-wrap .img-box a img {
+    width: 100%;
+    display: block;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.works .img-wrap .img-box:hover img {
+    -webkit-transform: scale(1.3);/*접두사*/
+    -ms-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    transform: scale(1.3);
+} 
+
+
+/***about************************************/
+article.about {
+    margin-top: 80px;
+    height: 450px;
+    /*padding-bottom: 200px;*/
+    /*높이 대신에 padding을 넣어줄수도 있음 높이 대신 여백을 이용해서 공간을 이용할수 있다. 그러나 이런부분에는 높이 주는것이 좀더 많이 사용함*/
+    text-align: center;
+    
+   /* background: url(images/people_01-1.png) no-repeat bottom/100% auto;*/
+    background-image: url(images/people_01-1.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+   /* outline: 2px solid red;*/
+}
+.about .sec-tit {
+    font-weight: 400;
+    /*400=normal*/
+}
+.about p {
+    font-size: 18px;
+    font-size: 1.125rem;
+    width: 50%;
+    margin: 0 auto 40px;
+}
+.about .btn-more {
+    font-size: 18px;
+    font-size: 1.125rem;
+    border: 2px solid #00c5b4;
+    color: #00c5b4;
+    display: inline-block;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-family: 'PT Serif', serif;
+    
+}
+.about .btn-more:hover {
+    background-color: #00c5b4;
+    color: #fff;
+}
+
+
+/******news*************************/
+
+article.news {
+    margin-top: 80px;
+    /*outline: 2px solid red;*/
+}
+
+.news .sec-tit {
+    margin-bottom: 0px;
+}
+.news > p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-size: 1.125rem;
+}
+.news:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.news .box {
+    width: 32%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    float: left;
+}
+
+.news .box~.box {
+    margin-left: 2%;
+}
+.news .box:hover {
+    border: 3px solid darkseagreen;
+}
+.news .box img {
+    width: 100%;
+    display: block;
+}
+.news .box:hover img {
+    box-sizing: border-box;
+}
+.news .box .title {
+    margin-top: 10px;
+    padding-left: 10px;
+    /*text-indent: 10px;*/
+    height: 50px;
+    margin-bottom: 6px;
+}
+.news .box .title a {
+    font-size: 18px;
+    font-size: 1.125rem;
+    color: #333;
+}
+.news .box .title a:hover {
+    color: darkseagreen;
+    text-decoration: underline;
+    
+}
+
+.news .box .date {
+    color: darkgray;
+    text-indent: 10px;
+    margin-bottom: 10px;
+}
+
+/****contact***************************/
+.contact {
+    margin-top: 80px;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    /*background: url(images/rb-03.jpg) no-repeat center/cover;*/
+    background-image: url(images/rb-03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.contact .sec-tit {
+    padding-top: 80px;
+    font-size: 48px;
+    font-size: 3rem;
+}
+
+.contact p {
+    font-size: 22.4px;
+    font-size: 1.4rem;
+    margin-bottom: 60px;
+}
+
+.contact .btn-more2 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    border: 2px solid #fff;
+    color: #fff;
+    display: inline-block;
+    padding: 12px 16px;
+    border-radius: 8px;
+}
+
+.contact .btn-more2:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/****footer***************************/
+footer {
+    padding: 60px 0;
+    position: relative;
+}
+footer .footer-box {
+    width: 33.33%;
+    float: left;
+    /*margin: 60px 0;*/
+  /*  outline: 2px solid red;*/
+}
+footer .footer-box h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+}
+footer .footer-box p {
+    color: darkgray;
+}
+
+footer .top {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
+footer .top a {
+    display: block;
+}
+footer .top a img {
+    display: block;
+}
+

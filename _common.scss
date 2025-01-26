@@ -39,6 +39,8 @@ a {
     display: flex;
     width:100%;
     box-sizing: border-box;
+    justify-content: space-between;
+    
     &_wrap {
         display: flex;
         flex-wrap: wrap;
@@ -46,10 +48,7 @@ a {
         flex-grow: 1;
     }
     li {
-        
-       &~li{
-        margin-left: 10px;
-       }
+
     }
 }
 //margin
@@ -67,30 +66,32 @@ a {
 
 //tit
 .tit{
-    font-family: 'mapo';
-    font-size: 80px;
+    @include tit (80px);
     font-weight: 300;
     padding: 60px 0 10px 0;
     &01{
-        font-family: "Roboto";
+        font-family: "noto-sans";
         font-size: 22px;
         font-weight: bold;
-        margin: 20px 10px;
+        margin: 0 10px 20px;
         letter-spacing: 2px;
         color:#333
     }
     &02 {
-        font-family: 'mapo';
-        font-size: 20px;
+        @include tit (22px, $weight:normal);
+    }
+    &03 {
+        @include tit (30px, $weight:normal);
+        padding:10px;
     }
 }
 .txt{
     &01{
-        font-family: "Roboto";
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 1.4;
-        margin: 0 10px;
-        color:#444;
+        //폰트크기, 색상, 굵기
+        @include txt_noto(16px);
+    }
+    &02{
+        @include txt_noto(14px);
+        word-break: keep-all;
     }
 }

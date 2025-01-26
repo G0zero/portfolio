@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* responsive - mobile*/
+/*max-width : 767px*/
+
+header .logo a img {
+    height: 46px;
+    margin-top: 7px;
+}
+
+header .m-menu a img {
+    height: 46px;
+    margin-top: 7px;
+}
+
+/*intro*/
+
+article.intro {
+    height: auto;
+    position: static;
+    padding-bottom: 300px;
+    background-size: auto 300px;
+    /*배경이미지의 높잇값을 padding-bottom값과 동일하게 설정*/
+    background-position: right bottom;
+    /*outline: 2px solid red;*/
+}
+.intro .txt-box {
+    position: static;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.intro .txt-box .des-en {
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.intro .btn {
+    position: static;
+    padding: 10px 12px;
+    margin-bottom: 60px;
+    
+}
+/*works*/
+article.works {
+    margin-top: 60px;
+}
+.works .img-wrap .img-box {
+    width: 100%;
+    float: none;
+    margin-bottom: 10px;
+}
+.works .img-wrap .img-box~.img-box {
+    margin-left: 0;
+}
+
+/*about*/
+
+article.about {
+    height: 400px;
+    background-size: auto 38%;
+    margin-top: 60px;
+}
+
+.about p {
+    width: 100%;
+}
+
+.about .btn-more {
+    padding: 10px 12px;
+}
+
+/*news*/
+
+article.news {
+    margin-top: 60px;
+}
+.news .sec-tit {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.news > p {
+    text-align: center;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.3;
+    word-break: keep-all;
+}
+.news .box {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+}
+
+.news .box~.box {
+    margin-left: 0;
+}
+
+/*contact*/
+
+.contact {
+    margin-top: 60px;
+    height: 400px;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.contact .sec-tit {
+    font-size: 38.4px;
+    font-size: 2.4rem;
+}
+
+.contact .btn-more2 {
+    padding: 10px 12px;
+} 
+
+/*footer*/
+
+footer {
+    padding: 50px 0; 
+}
+footer .footer-box {
+    width: 100%;
+    float: none;
+    margin-bottom: 12px;
+}
+footer .footer-box h3 {
+    margin-bottom: 6px;
+}
+footer .top {
+    bottom: 70px;
+}
+
+
+
+
+

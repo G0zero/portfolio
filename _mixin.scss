@@ -1,8 +1,17 @@
-@mixin tit ($size,$col){
+@mixin tit ($size,$col:#000,$weight:bold){
     font-size:$size;
-    font-weight: bold;
+    font-weight: $weight;
     color:$col;
-    font-family: "Roboto", sans-serif;
+    font-family:'mapo';
+}
+
+@mixin txt_noto ($size, $col:#333, $weight:normal){
+    font-family: "noto-sans";
+    font-weight: $weight;
+    font-size: $size;
+    line-height: 1.4;
+    margin: 0 10px;
+    color: $col;
 }
 
 @mixin ico01 ($x,$y){
@@ -14,4 +23,11 @@
     background-repeat: no-repeat;
     background-size: auto 30px;
     font-size: 0;
+}
+@mixin backimg ($img,$pos:top,$size){
+    display: block;
+    background-image: url('/css/images/'+ $img +'.png');
+    background-position: $pos;
+    background-repeat: no-repeat;
+    background-size: $size;
 }

@@ -151,7 +151,7 @@ header nav .gnb > li > a .ico01::before {
   width: 10px;
   height: 10px;
   content: "";
-  background-image: url(/images/ico/inb_ico.png);
+  background-image: url(images/ico/inb_ico.png);
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
