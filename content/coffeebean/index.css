@@ -1,0 +1,451 @@
+@charset "utf-8";
+
+/****RESET*************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%; /*16px과 같아짐 */
+    font-weight: normal; /*400*/
+}
+
+
+/******common.css**************************************/
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/*안쪽에서 컨텐츠 너비를 잡아주는 공통 클래스*/
+.inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.sec-tit {
+    font-size: 28px;
+    color: rgb(207,102,26);
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+}
+
+/*font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;*/
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/***HEADER**************************************/
+header {
+    width: 100%;
+    background-color: rgb(255,255,255);
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+header .lnb {
+    width: 100%;
+    background-color: lightgray;
+    height: 40px;
+    line-height: 40px;
+    
+}
+
+header .lnb ul {
+    float: right;
+}
+header .lnb ul li {
+    float:left;
+    margin-left: 20px;
+}
+header .lnb ul li:last-child {
+    margin-right: 0;
+   /* background-color: rgb(47,28,17);*/
+    font-size: 0;
+    width: 60px;
+   /* text-indent: -999px;*/
+   font-size: 0;
+    background: rgb(47,28,17) url(img/ico_user_info_line.png) no-repeat center;
+}
+header .lnb ul li a {
+    color: #333;
+    display: block;
+    /*outline: 2px solid red;*/
+}
+header .lnb ul li a:hover {
+    color: rgb(47,28,17);
+    text-decoration: underline;
+}
+
+
+header .header-bottom {
+    height: 100px;
+}
+
+header .header-bottom h1.logo {
+    height:100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+    float: left;
+}
+header .header-bottom h1.logo a {
+   /* background-color: yellow;*/
+    display: block;
+}
+header .header-bottom h1.logo a img {
+    height: 70px;
+    display: block;
+}
+
+header .header-bottom nav {
+    float: left;
+    margin-left:100px;
+}
+/*보통 태그가 길어져서 끊을때는 클레스 이름으로 많이 끊음 지금은 nav태그가 하나여서 이렇게 하긴했지만 보통은 이렇게 끊지는 않음*/
+nav ul {
+    
+}
+nav ul li {
+    float: left;
+    line-height: 100px;
+    margin: 0 30px;
+    /*text-transform: uppercase;*//*대문자로 바꿔주는것*/
+}
+nav ul li a {
+    text-transform: uppercase;
+    font-family: Arial;
+    color: rgb(47,28,17);
+    font-weight: 700;
+}
+nav ul li a:hover {
+    color: rgb(207,102,26);
+}
+nav ul li.active a {
+    color: rgb(207,102,26);
+}
+
+
+header .header-bottom #btnSearch {
+    float: right;
+}
+header .header-bottom #btnSearch a {
+    width: 20px;
+    height: 100px;
+    display: block;
+    background: url(img/ico_search.png) no-repeat center;
+    text-indent: -9999px;
+}
+/*여기서 height에 100%를 주면 글자만큼만 있는 이유는 부모의 너비값이 없기 때문이고, 그렇다고 계속 요소를 찾아 부모에게 높이값을 줄수 없기떄문에 px로 넣어주는 것임*/
+
+/****MAIN***********************************************/
+main {
+    margin-top: 140px;
+    width: 100%;
+    height: 500px;
+    background: url(img/main01.jpg) no-repeat center top/cover;
+    /*outline: 2px solid blue;*/
+}
+
+main .inner {
+    height: 100%;
+    /*outline: 2px solid red;*/
+    position: relative;
+}
+
+main p {
+    display: none;/*가지고 있는 공간까지도 없애는것 없는 것처럼취급*/
+    /*font-size: 0; */
+    /*text-indent: -9999px; 공간은 그대로 남아있음*/
+    /*opacity: 0;*/
+}
+
+main a {
+    font-size: 18px;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    position: absolute;
+    top: 260px;;
+    left: 170px;
+}
+
+main a:hover {
+    background-color: #fff;
+    color: #ff746d;
+    font-weight: bold;
+}
+
+/*****SECTION*******************************************/
+
+
+/****SECTION1. event************************************/
+
+section .event {
+    width: 100%;
+}
+section .event a{
+    display: block; /*width:100%;*/
+}
+section .event a img {
+    width: 100%;
+    display: block;
+}
+
+/****SECTION2. md's pick********************************/
+section .md-pick {
+    width: 1280px;
+    margin: 60px auto 80px;
+  /*  outline: 2px solid blue;*/
+}
+
+section .md-pick .md-wrap {
+    width: 100%;
+   /* background-color: lightskyblue;*/
+}
+section .md-pick .md-wrap .md-box{
+    width: 25%;
+    float: left;
+    /*outline: 2px solid red;*/
+}
+
+.md-box .photo {
+    margin-bottom: 30px;
+    position: relative;
+}
+.md-box .photo img {
+    width: 100%;
+}
+.md-box .photo .quick {
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1.4px;
+    background-color: rgb(207,102,26);
+    padding: 10px 20px;
+    color: #fff;
+    /*display: inline-block;*/
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    /*요소가 가진 크기만큼 50% 이동해~라는 뜻임 그래서 글자가 줄어들어도 중간에 있음*/
+    display: none;
+}
+.md-box .photo:hover img {
+    opacity: 0.4;
+} 
+.md-box .photo:hover .quick {
+    display: inline-block;
+} 
+
+.md-box .txt-box {
+    text-align: center;
+}
+.md-box .txt-box span {
+    display: block;
+}
+.md-box .txt-box .name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.md-box .txt-box .des {
+    line-height: 40px;
+}
+.md-box .txt-box .price {
+    line-height: 30px;
+    font-weight: 700;
+    color: rgb(207,102,26);
+}
+
+/****SECTION3. What's NEW*********************/
+
+section .new {
+    width: 1280px;
+    margin: 0 auto 80px;
+}
+
+section .new .box {
+     /*outline: 2px solid red;*/
+    width: 32%;
+    float: left;
+   /* overflow: hidden*/
+}
+
+section .new .box~.box {
+    margin-left: 2%;
+}
+
+.new .box a {
+    display: block;
+    margin-bottom: 30px;
+   /* background-color: yellow; */ 
+    overflow: hidden;
+    
+}
+
+.new .box img {
+    width: 100%;
+    display: block;
+    transition: all 0.5s;
+}
+
+.new .box a:hover img {
+    transform: scale(1.2);
+}
+
+
+.new .box p {
+     font-family: 'Nanum Myeongjo', serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(207,102,26);
+}
+
+/****SECTION3. Instagram*********************/
+
+section .instagram {
+    width: 100%;
+    background-color:  rgb(124,81,161);
+    text-align: center;
+    padding: 60px 0 50px;
+}
+
+section .instagram h2 {
+    margin-bottom: 30px;
+}
+
+section .instagram h2 a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+section .instagram h2 a~a {
+    margin-left: 20px;
+}
+
+section .instagram .img-wrap {
+    width: 1280px;
+    margin: 0 auto;
+    background-color: rgb(243,130,0);
+    /*outline: 2px solid lime;*/
+}
+
+.img-wrap .img-box {
+    width:16.66%;
+    float: left;
+}
+.img-wrap .img-box a {
+    display: block;
+   
+}
+.img-wrap .img-box a img {
+    width: 100%;
+    display: block;
+     transition: all 0.4s;
+}
+.img-wrap .img-box:hover img {
+    opacity: 0.6;
+}
+.instagram > a {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Nanum Myeongjo', serif;
+    background-color: rgb(207,102,26);
+    display: block;
+    width: 400px;
+    margin: 30px auto 0;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+/*****FOOTER****************************/
+
+footer {
+    width: 100%;
+    background-color: lightgray;
+    padding: 60px 0;
+}
+footer a {
+    color: #333;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .sitemap {
+   /* border-bottom: 1px solid #333;
+    padding-bottom: 30px;*/
+    margin-bottom: 60px;
+}
+footer .sitemap .mapbox {
+    float: left;
+    width: 16.66%;
+    /*outline: 2px solid red;*/
+}
+footer .sitemap .mapbox h3 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 18px;
+    color: rgb(207,102,26);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+footer .sitemap .mapbox ul {}
+footer .sitemap .mapbox ul li {
+    line-height: 30px;
+}
+
+footer .footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 30px;
+}
+
+footer .footer-bottom .info{
+    float: left;
+    
+}
+footer .footer-bottom .info .links {
+    margin-bottom: 20px;
+}
+footer .footer-bottom .info .links a~a {
+    border-left: 2px solid #333;
+    padding-left: 6px;
+}
+
+footer .footer-bottom .sns{
+    float: right;
+    
+}
+
+footer .footer-bottom .sns a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    /*float: left;*/
+    display: inline-block;
+    
+}
+
+footer .footer-bottom .sns a~a{
+    margin-left: 8px;
+}
+footer .footer-bottom .sns a img {
+    display: block;
+    width: 100%;
+}

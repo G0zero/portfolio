@@ -1,0 +1,169 @@
+@import "_reset.scss", "_mixin.scss";
+
+
+.clearfix:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+body {
+    background-image: url(images/bg_body.png);
+}
+
+.wrap{
+	width: 1200px;
+	margin: 50px auto;
+	position: relative; /*footer 위치 기준!*/
+	overflow: hidden;/*float해제를 위함*/
+   /* outline: 2px solid red;*/
+   header{
+		width: 210px;
+		height: 848px;
+		background-image: url(images/bg_head.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		float: left;
+		padding: 50px 40px 0;
+		box-sizing: border-box;
+		h1{
+			a{
+				height:35px;
+				@include position 
+			}
+		}
+		nav{
+			ul{
+				li{
+					margin: 20px auto;
+					/* outline: 2px solid lime;*/
+					a{
+						/*line-height: 50px;*/
+						padding: 10px 0;
+						/*이럴때 선택할수 있는 공간을 잡아 줘야하기때문에 line-height를 더 많이 사용함*/
+					}
+					&.history a{
+						@include position(-40px, -38px); 
+						&:hover{
+							@include position(-250px, -38px); 
+						}
+					}
+					&.innovation a{
+						@include position(-40px, -110px); 
+						&:hover{
+							@include position(-250px, -110px); 
+						}
+					}
+					&.new a{
+						@include position(-40px, -183px); 
+						&:hover{
+							@include position(-250px, -183px); 
+						}
+					}
+					&.book a{
+						@include position(-40px, -255px); 
+						&:hover{
+							@include position(-250px, -255px); 
+						}
+					}
+					&.event a{
+						@include position(-40px, -317px); 
+						&:hover{
+							@include position(-250px, -317px); 
+						}
+					}
+				}
+			}
+		}
+   }
+   section{
+		/*background-color: turquoise;*/
+		width: 960px;
+		height: 848px;
+		background: url(images/bg_main.gif) no-repeat;
+		float: right;
+		position: relative;
+		a{
+			display: block;
+			position: absolute;
+			/*여기서 폰트 사이즈 영을 만들수 있었던 이유는 요소마다 너비와 높이를 만들어 주었기 때문에 아까는 글자 크기만큼을 사용했고 지금은 아님*/
+			font-size: 0;
+			/*text-indent: -9999px;*/
+			transition: all 0.5s;
+			&:hover{
+				background-position: right;
+			}
+			&.con_book{
+				/* background-color: firebrick;*/
+				width: 296px;
+				height: 320px;
+				background-image: url(images/img_main01.png);
+			}
+			&.con_history{
+				width: 295px;
+				height: 314px;
+				background-image: url(images/img_main02.png);
+				right: 0px;
+				top: 267px;
+			}
+			&.con_movie{
+				width: 296px;
+				height: 222px;
+				background-image: url(images/img_main03.png);
+				bottom:120px;
+			}
+			&.con_innovation{
+				width: 369px;
+				height: 120px;
+				background-image: url(images/img_main04.png);
+				bottom: 0;
+				left: 298px;
+			}
+			&.con_event{
+				width: 160px;
+				height: 268px;
+				background-image: url(images/img_main05.png);
+				bottom: 0px;
+				right: 135px;
+			}
+		}
+   }
+   footer{
+		clear: both;
+		width: 150px;
+		position: absolute;
+		left: 30px;
+		bottom: 50px;
+		text-indent: -9999px;
+		address{
+			background: url(images/bg_footer.png) no-repeat;
+			margin-bottom: 20px;
+			height: 30px;
+			/*outline: 2px solid lime;*/
+		}
+
+		p{
+			background: url(images/bg_footer.png) no-repeat;
+			height: 40px;
+			margin-bottom: 20px;
+		   /* outline: 2px solid lime;*/
+			background-position: left -37px;
+		}
+		div.sns{
+			&>a{
+				width: 36px;
+				height: 36px;
+				display: block;
+				background: url(images/bg_footer.png) no-repeat;
+				float: left;
+				&:first-child{
+					margin-right: 10px;
+					background-position: left bottom;	
+				}
+				&:last-child{
+					background-position: -46px bottom;	
+				}
+			}
+
+		}
+   }
+}

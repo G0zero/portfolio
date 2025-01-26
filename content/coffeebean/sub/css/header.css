@@ -1,0 +1,150 @@
+/*header.css************************************/
+
+
+@charset "utf-8";
+
+header {
+    width: 100%;
+    background-color: rgb(255,255,255);
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+header .lnb {
+    width: 100%;
+    background-color: lightgray;
+    height: 40px;
+    line-height: 40px;
+    
+}
+
+header .lnb ul {
+    float: right;
+}
+header .lnb ul li {
+    float:left;
+    margin-left: 20px;
+}
+header .lnb ul li:last-child {
+    margin-right: 0;
+   /* background-color: rgb(47,28,17);*/
+    font-size: 0;
+    width: 60px;
+   /* text-indent: -999px;*/
+   font-size: 0;
+    background: rgb(47,28,17) url(../img/ico_user_info_line.png) no-repeat center;
+}
+header .lnb ul li a {
+    color: #333;
+    display: block;
+    /*outline: 2px solid red;*/
+}
+header .lnb ul li a:hover {
+    color: rgb(47,28,17);
+    text-decoration: underline;
+}
+
+
+header .header-bottom {
+    height: 100px;
+}
+
+header .header-bottom h1.logo {
+    height:100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+    float: left;
+}
+header .header-bottom h1.logo a {
+   /* background-color: yellow;*/
+    display: block;
+}
+header .header-bottom h1.logo a img {
+    height: 70px;
+    display: block;
+}
+
+header .header-bottom nav {
+    float: left;
+    margin-left:100px;
+}
+/*보통 태그가 길어져서 끊을때는 클레스 이름으로 많이 끊음 지금은 nav태그가 하나여서 이렇게 하긴했지만 보통은 이렇게 끊지는 않음*/
+nav ul {
+    
+}
+nav ul li {
+    float: left;
+    line-height: 100px;
+    margin: 0 30px;
+    /*text-transform: uppercase;*//*대문자로 바꿔주는것*/
+}
+nav ul li a {
+    text-transform: uppercase;
+    font-family: Arial;
+    color: rgb(47,28,17);
+    font-weight: 700;
+}
+nav ul li a:hover {
+    color: rgb(207,102,26);
+}
+nav ul li.active a {
+    color: rgb(207,102,26);
+}
+
+
+/*header .header-bottom #btnSearch {
+    float: right;
+}
+header .header-bottom #btnSearch a {
+    width: 20px;
+    height: 100px;
+    display: block;
+    background: url(img/ico_search.png) no-repeat center;
+    text-indent: -9999px;
+}*/
+/*여기서 height에 100%를 주면 글자만큼만 있는 이유는 부모의 너비값이 없기 때문이고, 그렇다고 계속 요소를 찾아 부모에게 높이값을 줄수 없기떄문에 px로 넣어주는 것임*/
+
+/* 폼태그로 구현한 검색바 */
+
+header form {
+    float: right;
+}
+header .searchbox {
+/*    outline: 2px solid red;*/
+    margin-top: 35px;
+}
+header .searchbox input {
+    height: 30px;
+    vertical-align: bottom;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    outline: 0;
+    color: blue;
+}
+/*header .searchbox input[placeholder] {
+    color: red;
+} 이렇게는 안함 이거느 잘못됨*/
+
+header .searchbox input::placeholder {
+    color: red;
+}
+/*가상으로 만들어진 경우에는 ::두개를 넣어야지만 됨 html에 없는 데 css로 만드는 경우에는 :: 임 근데 after나 before도 마찬가지로 ::두개 써야하는데 매번 쓰기 어려워서 before하고 after만 하나로 써도 괜찮음 */
+header .searchbox button {
+    height: 30px;
+     vertical-align: bottom;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+   /* background:none;
+    백그라운드에서는 none사용이 가능하지만 
+    백그라운드 컬러에서는 사용할수 없음 그러나 
+    백그ㅏ운드컬러로 색을 빼고 싶다면 투명하게 하는 방법이 있음 그게transparent임*/
+}
+header .searchbox button img {}
+
+
+
+

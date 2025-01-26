@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+article h2 {
+    font-size: 26px;
+    font-family: 'Nanum Myeongjo', serif;
+    margin-bottom: 50px;
+}
+
+p {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+section {
+    margin-top: 200px;
+}
+
+article.vips {
+    margin-bottom: 100px;
+}
+
+.vips ul {
+    width: 100%;
+}
+
+ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.vips ul li {
+    float: left;
+    width: 23%;
+    display: none;
+}
+
+.vips ul li ~ li {
+    margin-left: 2.66%;
+}
+
+.vips ul li img {
+    border-radius: 10px;
+}
+
+.vips ul li > p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/*taste*/
+.taste {
+    background-color: #c41230;
+    margin-top: 150px;
+
+}
+
+.taste h2 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.taste .btn {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.taste .btn li {
+    float: left;
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 2px solid #fff;
+}
+
+.taste .btn li a {
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.taste .btn li:hover {
+    border-bottom: 3px solid #000;
+}
+
+.taste .btn li:hover a {
+    color: #000;
+    font-weight: bold;
+}
+
+.taste .btn .on {
+    border-bottom: 3px solid #000;
+    font-weight: bold;
+}
+
+.taste .btn .on a {
+    color: #000;
+}
+
+.taste .slide {
+    width: 1200px;
+    margin: 0 auto;
+    height: 850px;
+    /*overflow: hidden;*/
+}
+
+.taste .slide ul {
+      width: 100%;
+    /*outline: 1px solid lime;*/
+    position: relative;
+}
+.taste .slide ul li:first-child {
+    display: block;
+}
+
+.taste .slide ul li {
+   /* float: left;*/
+    position: absolute;
+    display: none;
+}
+
+.taste .slide ul .tas_box img {
+    border-radius: 30px;
+    width: 1200px;
+}
+
+.taste .slide ul .tas_box h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    margin: 30px 0;
+
+}
+
+.taste .slide ul .tas_box p {
+    width: 900px;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.special {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.special h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.special .spec_box {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.special .spec_box div.imgbox {
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    /*  outline: 2px solid blue;*/
+
+}
+
+.special .spec_box .imgbox img {
+    height: 450px;
+
+}
+
+.special .spec_box .txt_box {
+    width: 50%;
+    float: left;
+    margin: 8% 0;
+    /*outline: 2px solid red;*/
+}
+
+.special .spec_box .txt_box h3 {
+    font-size: 18px;
+    padding: 30px 40px;
+    border-bottom: 1px solid #333;
+    /* outline: 2px solid blue;*/
+}
+
+.special .spec_box .txt_box h3 span {
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 34px;
+    padding: 10px;
+    display: inline-block;
+    /*outline: 2px solid red;*/
+
+}
+
+.special .spec_box .txt_box p {
+    width: 500px;
+    margin-left: 40px;
+    padding-top: 5px;
+}
+
+
+.special .spec_box .txt_box p:nth-child(2) {
+    margin-top: 20px;
+}

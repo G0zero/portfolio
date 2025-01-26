@@ -6,9 +6,12 @@
 }
 
 @mixin ico01 ($x,$y){
+    display: block;
     width: 30px;
     height: 30px;
-    background-image: url('css/images/icon.png');
-    background-position: $x,$y;
+    background-image: url('/css/images/icon.png');
+    background-position: $x + px,$y + px;
     background-repeat: no-repeat;
+    background-size: auto 30px;
+    font-size: 0;
 }

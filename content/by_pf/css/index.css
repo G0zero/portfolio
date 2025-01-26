@@ -1,0 +1,235 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background-color: #004C32 !important;
+}
+
+:root {
+  --swiper-theme-color: #004C32;
+}
+
+.inner {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+header nav {
+  height: 100px;
+  box-sizing: border-box;
+}
+header nav .logo {
+  float: left;
+  font-size: 23px;
+  padding-left: 20px;
+  padding-top: 55px;
+  box-sizing: border-box;
+}
+header nav .gnb {
+  float: right;
+  position: relative;
+  display: flex;
+  justify-items: start;
+}
+header nav .gnb > li {
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 25px;
+}
+header nav .gnb > li ~ li {
+  margin-left: 1px;
+}
+header nav .gnb > li:last-child {
+  padding-right: 15px;
+}
+header nav .gnb > li:hover {
+  text-decoration: underline;
+}
+header nav .gnb > li > a {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+header nav .gnb > li > a .ico01 {
+  position: relative;
+}
+header nav .gnb > li > a .ico01::before {
+  display: block;
+  width: 10px;
+  height: 10px;
+  content: "";
+  background-image: url(/images/ico/inb_ico.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
+header nav .gnb > li .lnb_wrap {
+  display: none;
+  width: 170px;
+  text-align: right;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  z-index: 9999;
+}
+header nav .gnb > li .lnb_wrap li {
+  line-height: 2.5;
+  padding-right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+}
+header nav .gnb > li .lnb_wrap li:hover {
+  background-color: rgba(107, 148, 132, 0.5);
+}
+header nav .gnb > li .lnb_wrap li a {
+  width: 100%;
+  display: block;
+  padding-right: 20px;
+}
+
+section {
+  padding-bottom: 50px;
+}
+section main {
+  width: 100%;
+}
+section main img {
+  display: block;
+  width: 100%;
+}
+section .con_wrap {
+  margin-top: 60px;
+}
+section .con_wrap .item_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+section .con_wrap .item_list .item_box {
+  text-align: center;
+}
+section .con_wrap .item_list .item_box a {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 0;
+}
+section .con_wrap .item_list .item_box a.img_box01 {
+  background-image: url("../images/main/main_con01.jpg");
+  background-position: center;
+  background-size: cover;
+}
+section .con_wrap .item_list .item_box a.img_box01:hover {
+  opacity: 0.7;
+}
+section .con_wrap .item_list .item_box a.img_box02 {
+  background-image: url("../images/main/main_con01_1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+section .con_wrap .item_list .item_box a.img_box03 {
+  background-image: url("../images/main/main_con04.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+}
+section .con_wrap .item_list .item_box p {
+  padding: 20px 0 20px;
+}

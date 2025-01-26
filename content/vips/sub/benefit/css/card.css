@@ -1,0 +1,124 @@
+@charset "utf-8";
+/*card.css*/
+
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
+
+div.tap {
+    width: 100%;
+    margin-top: 100px;
+    border-bottom: 1px solid #eee;
+
+}
+
+div.tap ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+div.tap ul li {
+    float: left;
+    /*    width: 120px;
+    text-align: center;*/
+    font-size: 18px;
+    line-height: 40px;
+    padding: 0 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+div.tap ul li:hover a {
+    color: #c41230;
+}
+
+div.tap ul li.bor {
+    border-bottom: 5px solid #c41230;
+}
+
+div.tap ul li.bor a {
+    color: #c41230;
+}
+
+section {
+    width: 90%;
+    max-width: 1280px;
+    margin: 80px auto 100px;
+    /* text-align: center;*/
+    /* outline: 2px solid red;*/
+}
+
+section ul {}
+
+section ul li:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section ul li {
+    border-bottom: 1px solid #333;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: none;
+}
+
+section ul li div {
+    width: 40%;
+    float: left;
+    margin: 60px 0;
+
+}
+
+section ul li div img {
+    width: 280px;
+    display: block;
+    margin: 20px auto;
+}
+
+section ul li div.txt_box {
+    width: 60%;
+    float: right;
+
+}
+section ul li div.txt_box h3 {
+    font-size: 24px;
+}
+
+section ul li div.txt_box p.m_txt {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+section ul li div.txt_box p{
+     font-size: 14px;   
+}
+section ul li div.txt_box p.cauption{
+    font-size: 12px;   
+}
+
+section ul li div a {
+    padding: 7px;
+    display: inline-block;
+    border: 1px solid #c41230;
+    border-radius: 8px;
+    color: #c41230;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 30px;
+
+}
+
+section ul li div a:hover {
+    color: #fff;
+    background-color: #c41230;
+}
+
+section > a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(-45deg);
+    font-size: 0;
+    margin: 30px auto;
+}

@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
+.clear {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+}
+
+p {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+section {
+    margin: 200px 0;
+}
+
+.vips_menu h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.vips_menu > div > p {
+    text-align: center;
+    margin: 10px 0 60px;
+}
+
+.vips_menu ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+.vips_menu ul li {
+    border: 1px solid #333;
+    border-radius: 30px;
+    width: 45%;
+    height: 550px;
+    margin-left: 5%;
+    float: left;
+    margin-bottom: 40px;
+    overflow: hidden;
+    
+}
+
+
+.vips_menu ul li:nth-child(2n-1) {
+    margin-left: 0;
+}
+
+
+.vips_menu ul li img {
+    width: 100%;
+    display: block;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.vips_menu ul li h3 {
+    text-align: center;
+    padding: 15px;
+}
+
+.vips_menu ul li a:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.vips_menu ul li a {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    padding: 5px 0;
+
+}
+
+.vips_menu ul li a p {
+    float: left;
+}
+
+.vips_menu ul li a p.price {
+    float: right;
+}
+
+.ad {
+    margin-top: 100px;
+    background-color: #c41230;
+}
+
+div.ad div.ad_txt {
+    width: 70%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    
+
+}
+
+.ad .ad_txt a {
+    display: block;
+    position: absolute;
+    top: 200%;
+    left: 85%;
+    
+}
+
+.ad .ad_txt a > span:first-child {
+    width: 25px;
+    height: 25px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    display: block;
+    transform: rotate(-135deg);
+    position: absolute;
+    left: 11px;
+}
+
+.ad .ad_txt a > span:last-child {
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: 13px;
+
+}
+
+.ad .ad_img {
+    width: 25%;
+    float: right;
+    
+}
+
+.ad div h3 {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.ad div p {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.ad div > img {
+    width: 180px;
+    display: block;
+    border-radius: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+.set {
+    margin-top: 150px;
+}
+
+.set > div > p {
+    text-align: center;
+    margin: 10px;
+}
+
+.set > div > div {
+    margin-top: 50px;
+    margin: 0 auto;
+}
+
+.set div img {
+    /*width: 100%;*/
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+
+.set .txt_box {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.set .txt_box:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.set .txt_box p:first-child:after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 24px;
+    background-color: #c41230;
+    position: absolute;
+    top: 10px;
+    left: -12px;
+    border-radius: 2px;
+
+}
+
+.set .txt_box p:first-child {
+    float: left;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.set .txt_box p:last-child {
+    float: right;
+}
+
+.set .txt_box span {
+    font-family: 'Noto Sans KR', sans-serif;
+    display: block;
+    font-size: 14px;
+    font-weight: 100;
+    padding-bottom: 5px;
+}

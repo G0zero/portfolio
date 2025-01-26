@@ -1,0 +1,154 @@
+@import "./reset","./mixin","./slide";
+
+//공용
+.inner {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+header {
+    nav {
+        height: 100px;
+        box-sizing: border-box;
+        .logo{
+            float: left;
+            font-size: 23px;
+            padding-left: 20px;
+            padding-top: 55px;
+            box-sizing: border-box;
+        }
+        .gnb {
+            float: right;
+            position: relative;
+            display: flex; 
+            justify-items: start;
+            & > li {
+                margin-left: auto;
+                padding-top: 60px;
+                padding-bottom: 25px;
+                & ~ li{
+                    margin-left: 1px;
+                }
+                &:last-child{
+                    padding-right: 15px;
+                }
+                &:hover{
+                    text-decoration: underline; 
+                    //background-color: rgba($color: #6B9484, $alpha: 0.9);
+                } 
+                & > a {
+                    width:100%;
+                    height: 100%;
+                    padding: 20px;
+                    .ico01{
+                        position: relative;
+                        &::before{
+                            display: block;
+                            width: 10px;
+                            height: 10px;
+                            content: "";
+                            background-image: url(images/ico/inb_ico.png);
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                            position: absolute;
+                            top:3px;
+                            left: 5px;
+                        }
+                    }
+                }
+                .lnb_wrap{
+                    display: none;
+                   width: 170px;
+                   text-align: right;
+                   position: absolute;
+                   top: 100px;
+                   right: 0;
+                   z-index: 9999;
+                   li {
+                        line-height: 2.5;
+                        padding-right: 20px;
+                        background-color: rgba($color: #fff, $alpha: 0.8);
+                        box-sizing: border-box;
+                        &:hover{
+                            background-color: rgba($color: #6B9484, $alpha: 0.5);
+                            //background-color: rgba($color: #649484, $alpha: 0.9);
+                        }
+                        a{
+                            width: 100%;
+                            display: block;
+                            padding-right: 20px;
+                            
+                        }
+                   }
+                }
+            }
+        }
+    }
+}
+// .ico01{
+//     position: relative;
+//     &::before{
+//         display: block;
+//         width: 10px;
+//         height: 10px;
+//         content: "";
+//         background-image: url(/images/ico/inb_ico.png);
+//         background-repeat: no-repeat;
+//         background-size: 100%;
+//         position: absolute;
+//         top:3px;
+//         left: 5px;
+//     }
+// }
+section {
+    padding-bottom: 50px;
+    main {
+        width: 100%;
+        img{
+            display: block;
+            width:100%;
+        }
+    }
+    .con_wrap {
+        margin-top: 60px;
+        .item_list {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            .item_box{   
+                text-align: center;         
+                a{
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    font-size: 0;
+                    &.img_box {
+                        &01 {
+                            @include bg_img(main_con01);
+                            &:hover{
+                                opacity: 0.7;
+                            }
+                        }
+                        &02 {
+                            @include bg_img(main_con01_1);
+                        }
+                        &03 {
+                            @include bg_img(main_con04);
+                            opacity: 0.9;
+                        }
+                    }
+                }
+                p {
+                    padding: 20px 0 20px;
+                }
+            }
+        }
+    }
+}

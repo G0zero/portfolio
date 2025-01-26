@@ -696,11 +696,74 @@ a {
 }
 
 .ico01 {
+  display: block;
   width: 30px;
   height: 30px;
-  background-image: url("css/images/icon.png");
-  background-position: 0, 0;
+  background-image: url("/css/images/icon.png");
+  background-position: -72px, 0px;
   background-repeat: no-repeat;
+  background-size: auto 30px;
+  font-size: 0;
+}
+.ico02 {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("/css/images/icon.png");
+  background-position: -108px, 0px;
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  font-size: 0;
+}
+.ico03 {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("/css/images/icon.png");
+  background-position: -179px, 0px;
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  font-size: 0;
+}
+.ico04 {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("/css/images/icon.png");
+  background-position: -35px, 0px;
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  font-size: 0;
+}
+.ico05 {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("/css/images/icon.png");
+  background-position: -108px, 0px;
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  font-size: 0;
+}
+.ico06 {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("/css/images/icon.png");
+  background-position: -143px, 0px;
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  font-size: 0;
+}
+.ico07 {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("/css/images/icon.png");
+  background-position: -215px, 0px;
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  font-size: 0;
 }
 
 .full1 .con_wrap {

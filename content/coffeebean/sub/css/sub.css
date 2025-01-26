@@ -1,0 +1,337 @@
+/***sub.css*************************************/
+
+@charset "utf-8";
+
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+/**location***********************************/
+
+.location {
+    margin-top: 140px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(124, 81, 161);
+
+}
+
+.location a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.location ul {
+    width: 1280px;
+    margin: 0 auto;
+    /*  outline: 2px solid lime;*/
+}
+
+.location ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.location ul li {
+    float: left;
+    margin-right: 20px;
+    background: url(../img/img_arr_location.png) no-repeat 0 center;
+    padding-left: 25px;
+}
+
+.location ul li:first-child {
+    padding-left: 0;
+    background: none;
+    /*background: none 백그라운드를 아예 없애라는 뜻*/
+}
+
+.location a:hover {
+    text-decoration: underline;
+}
+
+/****MAIN********************************/
+
+main {
+    width: 100%;
+    /*outline: 2px solid red;*/
+}
+
+main img {
+    width: 100%;
+    display: block;
+}
+
+
+/****VALUE********************************/
+article.value {
+    width: 1200px;
+    margin: 60px auto;
+    border-bottom: 1px solid rgb(105, 81, 157);
+    padding-bottom: 60px;
+}
+
+/*.value ul:after {
+    content:"";
+    display: block;
+    clear: both;
+}*/
+
+/* 1)after로 배경이미지 처리*/
+
+/*
+.value ul li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    position: relative;
+    outline: 2px solid red;
+}
+
+*/
+
+/*.value ul li::after {
+    content: "";
+    display: block; 요소상태가 블럭이여야 다루기가 편함
+    width: 40px;
+    height: 40px;
+    background: url(../img/bg_plus_icon.gif) no-repeat;
+    position: absolute;
+    left: -20px;
+    top: 60px;
+}
+:하나는 선ㅇ택한겅유 ::는 가상선택자임
+
+.value ul li:first-child::after {
+    background: none;
+}*/
+
+
+/*2) width , margin으로 조절*/
+
+.value ul li {
+    width: 340px;
+    float: left;
+    text-align: center;
+    margin: 0 -20px;
+    background: url(../img/bg_plus_icon.gif) no-repeat 0 60px;
+    /* outline: 2px solid red;*/
+
+}
+
+.value ul li:first-child {
+    background: none;
+ /*   outline: 2px solid red;*/
+}
+
+.value ul li img {
+    width: 160px;
+    display: block;
+    margin: 0 auto 25px;
+}
+
+.value ul li dl {}
+
+.value ul li dl dt {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: rgb(105, 81, 157);
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+}
+
+.value ul li dl dd {
+    font-size: 20px;
+    letter-spacing: -0.6px;
+    line-height: 1.4;
+}
+
+.value ul li dl dd.point {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(105, 81, 157);
+    margin-top: 10px;
+    font-weight: 700;
+
+}
+
+.merri {
+    font-family: 'Merriweather', serif;
+}
+
+
+
+/****SPECIALTY********************************/
+
+/*1) 이미지 태그로 배너를 넣은경우*/
+
+/*article.specialty {
+}
+
+.specialty .des {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.specialty .des p {}
+.specialty .des p:first-child {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.specialty .des p:last-child {
+    font-size: 32px;
+    color: rgb(207,102,26);
+    font-weight: 700;
+}*/
+
+/*.specialty .banner {
+    width: 100%;
+}
+.specialty .banner img {
+    width: 100%;
+    display: block;
+}*/
+
+/*2)백그라운드 이미지로 배너를 넣는 경우*/
+
+article.specialty {
+    height: 750px;
+    /*배경이미지를 위한 높이값 설정*/
+    background-image: url(../img/bg_coffeebean-korea_banner02.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+    margin-bottom: 80px;
+    /*background-color: yellow;*/
+}
+
+.specialty .des {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.specialty .des p {}
+
+.specialty .des p:first-child {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.specialty .des p:last-child {
+    font-size: 32px;
+    color: rgb(207, 102, 26);
+    font-weight: 700;
+}
+
+/****COFFEE********************************/
+
+/*coffee & tea 공통 클래스*/
+
+article .title {
+    font-family: 'Merriweather', serif;
+    font-size: 32px;
+    /*2rem*/
+    color: rgb(207, 102, 26);
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    background: url(../img/bg_bar6.gif) repeat-x 0 50%;
+}
+
+article .title span {
+    background-color: #fff;
+    padding: 0 30px;
+}
+
+article .sub-title {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: rgb(207, 102, 26);
+    margin-bottom: 20px;
+    /*text-align: center;*/
+}
+
+article .description {
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    letter-spacing: -0.6px;
+    line-height: 1.4;
+   /* text-align: center;*/
+}
+
+article .btn {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: rgb(243, 130, 0);
+
+    /* width: 400px;*/
+    display: inline-block;
+    padding: 14px 30px;
+    /* line-height: 40px;*/
+    /* text-align: center;*/
+    
+}
+
+article .btn a {
+    color: #fff;
+    display: block;
+}
+
+
+article.coffee {
+    /* background-color: yellow;*/
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+article.coffee ul, article.tea ul {
+    width: 100%;
+    margin: 30px 0 60px;
+
+}
+article.coffee ul::after, article.tea ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+article.coffee ul li, article.tea ul li {
+    width: 32%;
+    float: left;
+    /*outline: 2px solid red;*/
+    
+}
+article.coffee ul li~li, article.tea ul li~li {
+    margin-left: 2%;
+}
+
+article.coffee ul li img, article.tea ul li img {
+    width: 100%;
+    display: block;
+    transition: all 0.5s;
+}
+
+article.coffee ul li:hover img {
+    opacity: 0.6;
+}
+article.tea ul li {
+    overflow: hidden;
+}
+article.tea ul li:hover img {
+    transform: scale(1.3);
+}
+
+
+article.tea {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+
+
+

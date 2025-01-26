@@ -1,0 +1,33 @@
+@import "_reset.scss", "_mixin.scss";
+
+//common 공통
+/*float을 해제하는 가상 선택자*/
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*영문폰트*/
+.eng {
+    font-family: 'PT Serif', serif;
+}
+/*inner는 보통 안쪽의 너비를 잡아주는 용도로 사용하는 것*/
+.inner {
+    width: 90%;
+    max-width: 1280px;
+    /*반응형 웹을 만들때 모두에게 값을 주지않아도 max-width를 통해 정해줄수 있음*/
+    margin: 0 auto;
+}
+.sec-tit {
+    font-size: 32px;
+    font-size: 2rem;
+    font-family: 'PT Serif', serif;
+    margin-bottom: 20px;
+}
+ 
+
+

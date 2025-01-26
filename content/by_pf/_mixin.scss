@@ -1,0 +1,5 @@
+@mixin bg_img ($ul,$jpg:'.jpg',$size:cover){
+    background-image: url('../images/main/' + $ul + $jpg);
+    background-position: center;
+    background-size: $size;
+}

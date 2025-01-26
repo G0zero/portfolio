@@ -1,0 +1,48 @@
+/**common.css***********************************/
+
+@charset "utf-8";
+
+/****RESET*************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%; /*16px과 같아짐 */
+    font-weight: normal; /*400*/
+}
+
+
+/******common.css**************************************/
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/*안쪽에서 컨텐츠 너비를 잡아주는 공통 클래스*/
+.inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.sec-tit {
+    font-size: 28px;
+    color: rgb(207,102,26);
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+}
+
+/*font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;*/
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>이은비 PORTFOLIO</title>
+        <link rel="stylesheet" href="css/index.css">
+
+        <!--favicon-->
+        <!--pc용/ico-->
+        <link rel="shortcut icon" href="images/ico/favicon.png">
+
+        <!--안드로이드/png-->
+        <link rel="shortcut icon" href="images/ico/favicon.png">
+
+        <!--애플IOS/png,jpg-->
+        <link rel="apple-touch-icon" href="images/ico/favicon.png">
+
+        <!-- 스와이퍼.css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    </head>
+    <body>
+        <header>
+             <nav class="inner">
+                <h1 class="logo"><a href="index.html">LEE EUN BI</a></h1>
+                <ul class="gnb">
+                    <li><a href="html/aboutme.html">About Me</a></li>
+                    <li><a href="#">Portfolio<span class="ico01"></span></a>
+                        <ul class="lnb_wrap">
+                            <li><a href="#">Living Space</a></li>
+                            <li><a href="#">Commercial Space</a></li>
+                            <li><a href="#">Architectural Design</a></li>
+                        </ul>
+                    </li>
+                </ul>
+             </nav>
+        </header>
+        <section>
+            <div class="inner">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="images/main/main_slide01.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/main/main_slide02.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/main/main_slide03.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+                <!-- <div class="con_wrap">
+                    <ul class="item_list">
+                        <li class="item_box">
+                            <a href="#" class="img_box01">
+                                Living Space
+                            </a>
+                            <p>Living Space</p>
+                        </li>
+                        <li class="item_box">
+                            <a href="#" class="img_box02">
+                                Commercial Space
+                            </a>
+                            <p>Commercial Space</p>
+                        </li>
+                        <li class="item_box">
+                            <a href="#" class="img_box03">
+                                Architectural Design
+                            </a>
+                            <p>Architectural Design</p>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            });
+        </script>    
+    </body>
+
+</html>

@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+@import url(reset.css);
+.clear::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.mob_menu, .mob_lnb {
+    display: none;
+}
+
+.inner {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+header h1{
+    float: left;
+    width: 10%;
+}
+header h1 a {
+    display: block;
+    height: 80px;
+    margin-top: 10px;
+}  
+header h1 a img {
+    height: 100%;
+}
+
+nav {
+    width: 78%;
+    float: right;
+    margin-top: 25px;
+    /*outline: 2px solid blue;*/
+}
+
+nav .menu {
+    float: left;
+}
+nav .menu > li {
+    float: left;
+    width: 150px;
+    text-align: center;
+    
+   
+}
+nav .menu > li > a {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    line-height: 50px;
+}
+nav .menu > li:hover > a{
+    border-bottom: 3px solid #c41230;
+}
+nav .menu li .sub-menu {
+    margin-top: 25px;
+    display: none;
+}
+nav .menu li .sub-menu li {
+    line-height: 40px;
+    background-color: #eee;
+}
+nav .menu li .sub-menu li a {
+    color: #333;
+     font-family: 'Noto Sans KR', sans-serif;
+}
+nav .menu li .sub-menu li:hover a {
+    background-color: #c41230;
+    color: #fff;
+    display: block;
+} 
+
+header .lnb {
+    line-height: 50px;
+    float: right;
+}
+header .lnb a {
+    color: #777;
+     font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+   /* outline: 2px solid red;*/
+}
+
+main {
+    width: 100%;
+    position: relative;
+    top: 100px;
+   /* max-width: 1920px;*/
+    margin: 0 auto;
+    height: 400px;
+    background-color: yellow;
+    
+}
+main div{
+    position: relative;
+}
+main div img{
+    width: 100%;
+    height: 400px;
+    display: block;
+
+}
+main div h2{
+    position: absolute;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #fff;
+    font-size: 30px;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+}
+main div p{
+    position: absolute;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    top: 53%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+

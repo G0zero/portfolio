@@ -1,0 +1,79 @@
+/**Footer.css********************************/
+
+
+@charset "utf-8";
+
+
+footer {
+    width: 100%;
+    background-color: lightgray;
+    padding: 60px 0;
+}
+footer a {
+    color: #333;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .sitemap {
+   /* border-bottom: 1px solid #333;
+    padding-bottom: 30px;*/
+    margin-bottom: 60px;
+}
+footer .sitemap .mapbox {
+    float: left;
+    width: 16.66%;
+    /*outline: 2px solid red;*/
+}
+footer .sitemap .mapbox h3 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 18px;
+    color: rgb(207,102,26);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+footer .sitemap .mapbox ul {}
+footer .sitemap .mapbox ul li {
+    line-height: 30px;
+}
+
+footer .footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 30px;
+}
+
+footer .footer-bottom .info{
+    float: left;
+    
+}
+footer .footer-bottom .info .links {
+    margin-bottom: 20px;
+}
+footer .footer-bottom .info .links a~a {
+    border-left: 2px solid #333;
+    padding-left: 6px;
+}
+
+footer .footer-bottom .sns{
+    float: right;
+    
+}
+
+footer .footer-bottom .sns a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    /*float: left;*/
+    display: inline-block;
+    
+}
+
+footer .footer-bottom .sns a~a{
+    margin-left: 8px;
+}
+footer .footer-bottom .sns a img {
+    display: block;
+    width: 100%;
+}

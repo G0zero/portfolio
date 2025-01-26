@@ -20,7 +20,25 @@
 //아이콘 
 .ico{
     &01{
-        @include ico01(0, 0);
+        @include ico01(-72, 0);
+    }
+    &02{
+        @include ico01(-108, 0);
+    }
+    &03{
+        @include ico01(-179, 0);
+    }
+    &04{
+        @include ico01(-35, 0);
+    }
+    &05{
+        @include ico01(-108, 0);
+    }
+    &06{
+        @include ico01(-143, 0);
+    }
+    &07{
+        @include ico01(-215, 0);
     }
 }
 

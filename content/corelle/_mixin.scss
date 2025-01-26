@@ -1,0 +1,7 @@
+@mixin position ($x:0px,$y:0){
+    display: block;
+    background-image: url(images/bg_gnb.png);
+    text-indent: -9999px;
+    background-position: $x $y;
+    background-repeat: no-repeat;
+}

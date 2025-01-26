@@ -1,0 +1,439 @@
+@charset "utf-8";
+
+/*****reset*************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+li {
+    float: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/******************************************/
+
+.inner {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.sec-tit {
+    font-family: 'Montserrat', sans-serif;
+    color: #3f51b5;
+    max-width: 1280px;
+    margin: 80px auto 0;
+    font-size: 38px;
+    font-size: 2.375rem;
+}
+
+/*******header****************/
+
+header {
+    height: 80px;
+    line-height: 80px;
+
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
+    float: left;
+}
+
+.logo a {
+    color: #3f51b5;
+}
+
+nav {
+    float: right;
+
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+
+nav ul li a {
+    color: #3f51b5;
+}
+.menu {
+   display: none;
+}
+/*******main***************/
+
+main {}
+
+main img {
+    width: 100%;
+}
+
+/******section******************/
+section {}
+
+.company {
+    margin-bottom: 50px;
+}
+
+.company .we-box h2 {
+    width: 50%;
+    float: left;
+}
+
+.company .we-box .txt {
+    margin-top: 80px;
+    width: 50%;
+    float: right;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    font-family: 'PT Serif', serif;
+    line-height: 25px;
+    position: relative;
+    color: #666;
+}
+
+.company .we-box .txt:after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 35px;
+    background-color: #eee;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+
+}
+
+.company ul {
+    border-bottom: 2px solid #ccc;
+}
+
+.company ul li {
+    width: 23.5%;
+    /* margin: 60px 0;*/
+    padding: 60px 0;
+    text-align: center;
+    /* background-color: yellow;*/
+}
+
+.company ul li ~ li {
+    margin-left: 2%;
+}
+
+.company ul li img {
+    height: 70px;
+}
+
+.company ul li h4 {
+    margin: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #3f51b5;
+}
+
+.company ul li p {
+    font-family: 'PT Serif', serif;
+    color: #666;
+    font-size: 17px;
+    font-size: 1.0625rem;
+    line-height: 25px;
+}
+
+/*********work******/
+.work {
+    margin-bottom: 50px;
+}
+
+.work ul {
+    margin: 50px 0 100px;
+}
+
+.work ul li {
+    width: 25%;
+
+}
+
+.work ul li img {
+    width: 100%;
+    display: block;
+}
+
+/***blog***************/
+.blog {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.blog:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: #3f51b5;
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.blog h2 {
+    float: left;
+    width: 30%;
+}
+
+.blog ul {
+    margin-top: 80px;
+    float: left;
+    width: 70%;
+
+}
+
+.blog ul li {
+    width: 32%;
+}
+
+.blog ul li ~ li {
+    margin-left: 2%;
+}
+
+.blog ul li img {
+    width: 100%;
+}
+
+
+.blog ul li .date {
+    font-size: 14px;
+    font-size: 0.875rem;
+    color: #999;
+    margin: 10px 0;
+}
+
+.blog ul li .blog-txt {
+    font-family: 'PT Serif', serif;
+    font-size: 17px;
+    font-size: 1.0625rem;
+}
+
+/*******contact**************/
+.contact {
+    margin-bottom: 50px;
+    /* outline: 2px solid red;*/
+}
+
+.contact h2 {
+    width: 30%;
+    float: left;
+}
+
+form {
+    margin-top: 80px;
+    width: 70%;
+    float: left;
+}
+
+form ul {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+}
+
+form ul li {
+    border-bottom: 1px solid #333;
+    float: none;
+}
+
+form ul li lable {
+    color: #3f51b5;
+}
+
+form ul li input {
+    border: none;
+    line-height: 56px;
+}
+
+form p {
+    float: left;
+    width: 49%;
+    border-bottom: 1px solid #333;
+
+}
+
+form p lable {
+    color: #3f51b5;
+    display: block;
+}
+
+form p textarea {
+    border: none;
+    width: 100%;
+    /* border-bottom: 1px solid #333;*/
+}
+
+form > input {
+    padding: 10px 15px;
+    border: none;
+    background-color: #3f51b5;
+    color: #fff;
+    float: right;
+    margin: 30px;
+}
+
+/*********map*********************/
+.map {
+    margin-bottom: 50px;
+    /*margin-top: 60px;*/
+}
+
+iframe {
+    width: 100%;
+}
+
+/***************footer**********/
+
+footer p {
+    text-align: center;
+    color: #3f51b5;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+/******태블릿*************************************************************/
+@media all and (max-width:1024px) {
+ 
+    .sec-tit {
+        text-align: center;
+    }
+    .company {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .company .we-box h2 {
+        width: 100%;
+        float: none;
+    }
+
+    .company .we-box .txt {
+        width: 100%;
+        float: none;
+        position: static;
+    }
+    .company ul {
+       padding-bottom: 50px;
+    }
+    
+    .work {
+        padding-top: 30px;
+    }
+    .work ul li {
+        width: 50%;
+    }
+    .blog {
+        padding-top: 30px;
+    } 
+    .blog h2 {
+        float: none;
+        width: 100%;
+    }
+    .blog ul {
+        float: none;
+        width: 100%;
+    }
+    .contact {
+        padding-top: 30px;
+    }
+    .contact h2 {
+        width: 100%;
+        float: none;
+    }
+    form {
+        width: 100%;
+    }
+}
+
+/*******모바일********************/
+
+@media all and (max-width:767px){
+    nav {
+        display: none;
+    }
+    .menu {
+        display: block;
+        float: right;
+        margin-top: 30px;
+    }
+    .menu span {
+        display: block;
+        width: 35px;
+        height: 3px;
+        background-color: #3f51b5;
+        margin-right: 10px;
+        margin-bottom: 5px;
+  
+    }
+    
+    .company ul li{
+        width: 100%;
+        float: none;
+    }
+    .company ul li~li {
+        margin-left: 0;
+    }
+    
+     .work ul li {
+        width: 100%;
+    }
+    .blog ul li {
+        float: none;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .blog ul li~li {
+        margin-left: 0;
+    }
+    form {
+        margin-bottom: 50px;
+    }
+    form ul {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    form p {
+        width: 100%;
+        float: none;
+    }
+    form > input {
+        margin: 20px 10px;
+    }
+}
