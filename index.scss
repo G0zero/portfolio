@@ -11,6 +11,12 @@
     ul {
         display: flex;
         li {
+            a{
+                display: block;
+                color:#000;
+                font-weight: bold;
+                font-family: "noto-sans";
+            }
             & ~ li {
                 margin-left: 15px;
             }
@@ -59,10 +65,11 @@
             bottom: 50px;
             right: 60px;
             .sub{
-                font-size: 16px;
+                font-size: 18px;
                 color:#333;
-                opacity: 0.8;
+                opacity: 0.9;
                 margin-bottom: 5px;
+                font-family: 'mapo';
             }
         }
     }
@@ -164,11 +171,12 @@
                                 }
                                 .txt_box{
                                     text-align: center;
-                                    
-                                    p{
-
-                                    }
                                     padding-bottom: 50px;
+                                    p{
+                                        &~p{
+                                            margin-bottom: 5px;
+                                        }
+                                    }
                                 }
 
                             }

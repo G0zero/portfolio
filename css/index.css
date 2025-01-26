@@ -672,7 +672,7 @@ a {
   font-family: "mapo";
 }
 .tit03 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: normal;
   color: #000;
   font-family: "mapo";
@@ -707,6 +707,12 @@ a {
 }
 .nav ul {
   display: flex;
+}
+.nav ul li a {
+  display: block;
+  color: #000;
+  font-weight: bold;
+  font-family: "noto-sans";
 }
 .nav ul li ~ li {
   margin-left: 15px;
@@ -801,10 +807,11 @@ a {
   right: 60px;
 }
 .full1 .con_wrap .txt_wrap .sub {
-  font-size: 16px;
+  font-size: 18px;
   color: #333;
-  opacity: 0.8;
+  opacity: 0.9;
   margin-bottom: 5px;
+  font-family: "mapo";
 }
 
 .full2 .con_wrap .inner {
@@ -879,7 +886,8 @@ a {
 }
 .full3 .con_wrap .inner .swiper_box .swiper .swiper-wrapper .swiper-slide .sw_item {
   display: block;
-  position: relative;
+  width: 100%;
+  height: auto;
 }
 .full3 .con_wrap .inner .swiper_box .swiper .swiper-wrapper .swiper-slide .sw_item .img_box {
   width: 100%;
@@ -893,4 +901,7 @@ a {
 .full3 .con_wrap .inner .swiper_box .swiper .swiper-wrapper .swiper-slide .sw_item .txt_box {
   text-align: center;
   padding-bottom: 50px;
+}
+.full3 .con_wrap .inner .swiper_box .swiper .swiper-wrapper .swiper-slide .sw_item .txt_box p ~ p {
+  margin-bottom: 5px;
 }
