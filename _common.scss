@@ -68,7 +68,7 @@ a {
 .tit{
     @include tit (80px);
     font-weight: 300;
-    padding: 60px 0 10px 0;
+    padding: 100px 0 10px 20px;
     &01{
         font-family: "noto-sans";
         font-size: 22px;
@@ -81,9 +81,16 @@ a {
         @include tit (22px, $weight:normal);
     }
     &03 {
-        @include tit (24px, $weight:normal);
+        @include tit (22px, #333,bold );
+        font-family: "noto-sans";
+        letter-spacing: 2px;
         padding:10px;
     }
+    &03_sub {
+        @include tit (18px, #333,bold );
+        font-family: "noto-sans";
+    }
+    
 }
 .txt{
     &01{

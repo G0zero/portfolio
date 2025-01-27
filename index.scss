@@ -1,4 +1,4 @@
-@import "./mixin","./common";
+@import "./mixin","./common","./swiper";
 
 
 .nav{
@@ -152,18 +152,15 @@
                 .swiper{
                     width: 100%;
                     position: absolute;
-                    top:150px;
+                    top:90px;
                     .swiper-wrapper{
                         .swiper-slide{
+                            border: 1px solid #999;
                             .sw_item{
                                 display: block;
                                 width:100%;
-                                height:auto;
                                 .img_box{
                                     width:100%;
-                                    border: 1px solid #999;
-                                    border-radius: 40px;
-                                    overflow: hidden;
                                     img{
                                         width: 100%;
                                     }
@@ -174,7 +171,7 @@
                                     padding-bottom: 50px;
                                     p{
                                         &~p{
-                                            margin-bottom: 5px;
+                                            margin-top: 10px;
                                         }
                                     }
                                 }
