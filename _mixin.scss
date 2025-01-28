@@ -13,6 +13,12 @@
     margin: 0 10px;
     color: $col;
 }
+@mixin txt_mapo ($size, $col:#333, $weight:normal){
+    font-family:'mapo';
+    font-weight: $weight;
+    font-size: $size;
+    color: $col;
+}
 
 @mixin ico01 ($x,$y){
     display: block;

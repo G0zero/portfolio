@@ -101,4 +101,9 @@ a {
         @include txt_noto(14px);
         word-break: keep-all;
     }
+    &03{
+        @include txt_mapo(16px); 
+        margin-top: 3px;
+        padding:2px
+    }
 }

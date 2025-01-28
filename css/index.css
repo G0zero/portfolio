@@ -705,6 +705,14 @@ a {
   color: #333;
   word-break: keep-all;
 }
+.txt03 {
+  font-family: "mapo";
+  font-weight: normal;
+  font-size: 16px;
+  color: #333;
+  margin-top: 3px;
+  padding: 2px;
+}
 
 @font-face {
   font-family: swiper-icons;
@@ -1428,6 +1436,34 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.quick {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100000;
+}
+.quick li {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: 2px solid #b0ccee;
+  cursor: pointer;
+}
+.quick li.on {
+  background: #b0ccee;
+}
+
 .nav {
   font-family: "Noto Sans", serif;
   position: fixed;
@@ -1521,6 +1557,19 @@ button.swiper-pagination-bullet {
   background-repeat: no-repeat;
   background-size: auto 30px;
   font-size: 0;
+}
+
+#fullpage {
+  position: relative;
+  top: 0px;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+}
+
+.fullsection {
+  width: 100%;
+  height: 100%;
 }
 
 .full1 .con_wrap {
@@ -1634,4 +1683,67 @@ button.swiper-pagination-bullet {
 }
 .full3 .con_wrap .inner .swiper_box .swiper .swiper-wrapper .swiper-slide .sw_item .txt_box p ~ p {
   margin-top: 10px;
+}
+
+.full5 {
+  position: relative;
+}
+.full5 .ex {
+  font-size: 80px;
+  font-weight: bold;
+  color: #000;
+  font-family: "mapo";
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-box {
+  outline: 1px solid #333333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px;
+}
+.form-box .control-group {
+  padding: 10px;
+}
+.form-box .control-group .form-group label {
+  display: block;
+  font-family: "noto-sans";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0 10px;
+  color: #333;
+  margin: 0 0 10px;
+}
+.form-box .control-group .form-group input,
+.form-box .control-group .form-group textarea {
+  display: block;
+  width: 300px;
+  border: 0;
+  background-color: inherit;
+  border-bottom: 1px solid #333;
+  padding: 10px;
+}
+.form-box .control-group .form-group input:focus,
+.form-box .control-group .form-group textarea:focus {
+  outline: none;
+}
+
+.btn_wrap {
+  text-align: center;
+}
+.btn_wrap button {
+  padding: 5px 10px;
+  font-family: "noto-sans";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0 10px;
+  color: #333;
 }
